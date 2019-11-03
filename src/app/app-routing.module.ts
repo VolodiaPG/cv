@@ -1,26 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DetailsComponent } from './details/details.component';
-import { RootComponent } from './root/root.component';
-import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: RootComponent,
-  },
-  {
-    path: 'details/:nodeId',
-    component: DetailsComponent,
-  },
-  {
-    path: 'settings',
-    component: SettingsComponent,
-  }
+  // Fallback when no prior route is matched
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: []
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

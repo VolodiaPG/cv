@@ -12,7 +12,7 @@ export class LoadingModuleComponent {
   @Output() hiddenEvent: EventEmitter<any> = new EventEmitter();
   @Output() visibleEvent: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  constructor() {}
 
   get visible(): boolean {
     return this._visible;
@@ -29,5 +29,4 @@ export class LoadingModuleComponent {
     }
     this._previousState = value;
   }
-
 }

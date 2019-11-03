@@ -1,0 +1,24 @@
+.main-box {
+  padding: 2rem 4rem;
+  max-width: 40rem;
+
+  color: #ef4e28;
+  background: linear-gradient(to right, #ef4e28 0%, #ec6d28 21%, #f7a358 74%, #f7c158 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, #ef4e28 0%, #ec6d28 21%, #f7a358 74%, #f7c158 100%);
+  border-image-slice: 1;
+  animation: hue 60s infinite linear;
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(-360deg);
+  }
+}
