@@ -20,5 +20,7 @@
   "Turn on": "Allumer",
   "Turn off": "Eteindre",
   "Timezone": "Fuseau horaire",
-  "hours": "heures"
+  "hours": "heures",
+  "Engineering student": "Elève ingénieur",
+  "__catch_phrase__": "Recherche activement un stage"
 }
