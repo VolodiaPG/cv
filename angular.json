@@ -29,7 +29,7 @@
               "src/manifest.json",
               "src/assets"
             ],
-            "styles": ["src/main.scss"],
+            "styles": ["src/main.scss", "node_modules/animate.css/animate.min.css"],
             "scripts": []
           },
           "configurations": {
