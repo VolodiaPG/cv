@@ -46,5 +46,16 @@ export const componentConfigs: object[] = [
         }
       }
     ]
+  },
+  {
+    id: ComponentId.ExperiencesList,
+    cols: [
+      {
+        property: 'title'
+      },
+      {
+        property: 'location'
+      }
+    ]
   }
 ];

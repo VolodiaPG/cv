@@ -11,9 +11,17 @@ import { UserPageComponent } from './user-page/user-page.component';
 import { MainTitleComponent } from './main-title/main-title.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule, NgbModule],
-  declarations: [HomeComponent, DataGridCompoenent, UserPageComponent, MainTitleComponent, NavbarComponent]
+  declarations: [
+    HomeComponent,
+    DataGridCompoenent,
+    UserPageComponent,
+    MainTitleComponent,
+    NavbarComponent,
+    ResumeComponent
+  ]
 })
 export class HomeModule {}
