@@ -12,6 +12,8 @@ import { MainTitleComponent } from './main-title/main-title.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResumeComponent } from './resume/resume.component';
+import { TimelineComponent } from './timeline/timeline.component';
+import { TimelineCardComponent } from './timeline/timeline-card/timeline-card.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule, NgbModule],
@@ -21,7 +23,9 @@ import { ResumeComponent } from './resume/resume.component';
     UserPageComponent,
     MainTitleComponent,
     NavbarComponent,
-    ResumeComponent
+    ResumeComponent,
+    TimelineComponent,
+    TimelineCardComponent
   ]
 })
 export class HomeModule {}

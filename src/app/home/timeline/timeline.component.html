@@ -1,0 +1,61 @@
+<!-- <ng-container *ngIf="config; else noConfig">
+    <table>
+        <tr *ngIf="!data">
+            <td>No data available</td>
+        </tr>
+        <tr *ngFor="let row of data">
+            <td *ngFor="let col of config.cols">
+                {{ row[col.property] }}
+            </td>
+        </tr>
+    </table>
+</ng-container>
+<ng-template #noConfig>
+    Loading...
+</ng-template> -->
+<ng-container *ngIf="config; else noConfig">
+  <div class="resume">
+    <ul class="timeline">
+      <li class="" *ngFor="let row of data">
+        <app-timeline-card [model]="row" [config]="config"></app-timeline-card>
+      </li>
+
+      <li class="timeline-inverted">
+        <div class="posted-date">
+          <span class="month">1999 - 2003</span>
+        </div>
+
+        <div id="edu-02" class="panel panel-success timeline-panel wow" data-wow-duration="1.5s">
+          <div class="timeline-content">
+            <div class="panel-heading timeline-heading row">
+              <div class="col-md-10 col-xs-9 pull-left">
+                <h3 class="panel-title">Bachelor's degree</h3>
+                <span class="text-primary"> - graduate diploma</span>
+              </div>
+
+              <div class="col-md-2 col-xs-3 pull-right text-center">
+                <i class="fas fa-3x fa-graduation-cap text-success"></i>
+              </div>
+            </div>
+
+            <div class="panel-body timeline-body">
+              <p>
+                Electromechanical Engineering<br />
+                Kremenchuk State Polytechnical University, Ukraine<br />
+                <strong>7.091003</strong> - Design Engineer of Electronic Equipment
+              </p>
+            </div>
+            <!--/ /timeline-body /-->
+          </div>
+          <!--/ /timeline-content /-->
+        </div>
+        <!--/ /timeline-panel /-->
+      </li>
+      <!--/ /timeline /-->
+    </ul>
+  </div>
+  <!--/ /row /-->
+</ng-container>
+<ng-template #noConfig>
+  Loading...
+</ng-template>

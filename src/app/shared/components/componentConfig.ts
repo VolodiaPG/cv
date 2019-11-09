@@ -49,13 +49,28 @@ export const componentConfigs: object[] = [
   },
   {
     id: ComponentId.ExperiencesList,
-    cols: [
-      {
+    cols: {
+      title: {
         property: 'title'
       },
-      {
+      subtitle: {
+        property: 'entity'
+      },
+      subtitleUrl: {
+        property: 'entityUrl'
+      },
+      precision: {
         property: 'location'
+      },
+      date: {
+        property: 'date'
+      },
+      description: {
+        property: 'description'
+      },
+      icon: {
+        property: 'entityLogo'
       }
-    ]
+    }
   }
 ];

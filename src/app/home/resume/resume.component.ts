@@ -1,33 +1,17 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { BaseComponent, ComponentRegistryService } from '@app/shared/components';
-import { ExperienceModel } from '../../shared/models/experience.model';
-import { BaseModelLoaderService } from '../../core/model-builder/base-model-loader.service';
-
-import experiences from '../../../assets/json/experiences.json';
-import { Logger } from '@app/core';
-
-const log = new Logger('Resume');
+import { Component, OnInit } from '@angular/core';
+import { ComponentId, ComponentRegistryService } from '@app/shared/components';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.scss']
 })
-export class ResumeComponent extends BaseComponent implements OnInit, OnDestroy {
-  data: ExperienceModel[];
+export class ResumeComponent implements OnInit {
+  componentId = ComponentId;
 
-  constructor(componentRegistry: ComponentRegistryService, private loader: BaseModelLoaderService) {
-    super(componentRegistry);
-  }
+  constructor(private componentRegistry: ComponentRegistryService) {}
 
-  ngOnInit(): void {
-    this.init(() => {
-      this.data = this.loader.load(experiences, ExperienceModel);
-      log.debug(this.data);
-    });
-  }
-
-  ngOnDestroy(): void {
-    this.dispose();
+  ngOnInit() {
+    this.componentRegistry.add(ComponentId.ExperiencesList);
   }
 }

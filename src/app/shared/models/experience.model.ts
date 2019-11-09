@@ -33,6 +33,12 @@ export class ExperienceModel extends BaseModel {
   })
   entityLogo: string;
 
+  @Property({
+    type: PropertyValueType.String,
+    label: 'Date'
+  })
+  date: string;
+
   constructor(data: Object) {
     super(data);
   }

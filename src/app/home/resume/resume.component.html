@@ -1,15 +1,15 @@
-<ng-container *ngIf="config; else noConfig">
-  <table>
-    <tr *ngIf="!data">
-      <td>No data available</td>
-    </tr>
-    <tr *ngFor="let row of data">
-      <td *ngFor="let col of config.cols">
-        {{ row[col.property] }}
-      </td>
-    </tr>
-  </table>
-</ng-container>
-<ng-template #noConfig>
-  Loading...
-</ng-template>
+<section id="resume" class="resume-section section-padding">
+  <div class="container">
+    <h2 class="section-title wow" data-wow-duration="1.5s">Resume</h2>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="edu" class="resume-title wow">
+          <h2 class="text-center text-primary">Education</h2>
+        </div>
+
+        <app-timeline [id]="componentId.ExperiencesList"></app-timeline>
+      </div>
+    </div>
+  </div>
+</section>
