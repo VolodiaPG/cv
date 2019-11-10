@@ -1,0 +1,96 @@
+@import "../../../../theme/theme-variables.scss";
+
+.progress-bar {
+  background-color: #68c3a3;
+
+  span {
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    color: $gray-300;
+  }
+}
+
+.skill-progress .progress {
+  background-image: none;
+}
+
+.progress::before {
+  // background-attachment: fixed;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // background-color: #ff0000;
+  // content: "";
+  // width: 5px;
+  // height: 5px;
+  background-image: linear-gradient(white, black);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* <- here it is */
+
+  width: 100px;
+  height: 100px;
+}
+
+.six-sec-ease-in-out {
+  background-image: linear-gradient(to bottom, #3b8269 0, #68c3a3 100%);
+}
+
+.skill-icon {
+  width: 15%;
+}
+
+.skill-title {
+  width: 55%;
+
+  i {
+    margin-right: 4px;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -4px;
+    text-transform: capitalize;
+    color: $gray-300;
+  }
+
+  span,
+  i {
+    float: left;
+    margin-top: -6px;
+    line-height: 24px;
+  }
+}
+
+.skill-progress {
+  position: relative;
+}
+
+.progress-bar {
+  background-color: #68c3a3;
+}
+
+.progress {
+  float: right;
+  height: 10px;
+  margin-bottom: 40px;
+  background-color: #3a4149;
+  border-radius: 3px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+  width: 45%;
+
+  .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+  }
+}
+
+.progress-percent {
+  margin-left: auto;
+  margin-right: auto;
+}

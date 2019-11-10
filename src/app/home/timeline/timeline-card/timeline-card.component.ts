@@ -6,8 +6,7 @@ import { BaseModel } from '@app/core/model-builder/base-model';
   templateUrl: './timeline-card.component.html',
   styleUrls: ['./timeline-card.component.scss']
 })
-export class TimelineCardComponent implements OnInit
-{
+export class TimelineCardComponent implements OnInit {
   /**
    * The config object relative to `componentConfigs`
    */
@@ -26,21 +25,19 @@ export class TimelineCardComponent implements OnInit
   @Input()
   inverted = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   /**
    * Returns the value of the property, after find its associated key inside `componentConfigs`
    * @param property The name of the property to get
    * @returns the object retrieved or `undefined`
    */
-  getProperty(property: string): string
-  {
+  getProperty(property: string): string {
     let ret = this.model[property];
 
-    if (ret && property === 'image')
-    {
+    if (ret && property === 'image') {
       //get the metadata of the path
       ret = this.model.getPropertyMeta('image').path + '/' + ret;
     }
@@ -53,11 +50,8 @@ export class TimelineCardComponent implements OnInit
    * @param property the name of the property to check
    * @returns `true` if the property exists
    */
-  exists(property: string): boolean
-  {
+  exists(property: string): boolean {
     // using this syntax in order not to access undefined elements
-    return !this.config['cols'][property] ? false
-      : !this.getProperty(property) ? false
-        : true;
+    return !this.config['cols'][property] ? false : !this.getProperty(property) ? false : true;
   }
 }
