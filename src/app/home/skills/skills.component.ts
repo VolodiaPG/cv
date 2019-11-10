@@ -6,13 +6,15 @@ import { ComponentRegistryService, ComponentId } from '@app/shared/components';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent implements OnInit
+{
   // make it available for the scope
   componentId = ComponentId;
 
-  constructor(private componentRegistry: ComponentRegistryService) {}
+  constructor(private componentRegistry: ComponentRegistryService) { }
 
-  ngOnInit() {
+  ngOnInit()
+  {
     this.componentRegistry.add(ComponentId.ProgressBarChart);
   }
 }

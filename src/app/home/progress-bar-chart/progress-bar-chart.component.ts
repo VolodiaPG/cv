@@ -11,18 +11,26 @@ import skills from '../../../assets/json/skills.json';
   templateUrl: './progress-bar-chart.component.html',
   styleUrls: ['./progress-bar-chart.component.scss']
 })
-export class ProgressBarChartComponent extends BaseComponent implements OnInit {
+export class ProgressBarChartComponent extends BaseComponent implements OnInit
+{
   data: ProgressChartModel[];
 
-  constructor(componentRegistry: ComponentRegistryService, private progressChartLoader: ProgressChartLoaderService) {
+  constructor(
+    componentRegistry: ComponentRegistryService,
+    private progressChartLoader: ProgressChartLoaderService
+  )
+  {
     super(componentRegistry);
     // this.data = new Array();
   }
 
-  ngOnInit() {
-    this.init(() => {
+  ngOnInit()
+  {
+    this.init(() =>
+    {
       this.data = this.progressChartLoader.load(skills, ProgressChartModel);
-      this.data.sort((a: ProgressChartModel, b: ProgressChartModel) => {
+      this.data.sort((a: ProgressChartModel, b: ProgressChartModel) =>
+      {
         return a.title.localeCompare(b.title);
       });
 
