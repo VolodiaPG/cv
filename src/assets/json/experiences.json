@@ -1,9 +1,30 @@
-[
-  {
-    "title": "Computer science engineer student",
-    "location": "Rennes",
-    "description": "Engineering school\nCurrently as a computer science student in 1st year of engineering cycle.",
-    "entity": "INSA Rennes",
-    "date": "2017-2019"
-  }
-]
+{
+  "education": [
+    {
+      "title": "Computer science engineer student",
+      "location": "Rennes",
+      "description": "Engineering school \n Currently as a computer science student in 1st year of engineering cycle.",
+      "entity": "INSA Rennes",
+      "entityUrl": "http://www.insa-rennes.fr",
+      "date": "2017 - 2019",
+      "icon": "fa-user-graduate"
+    },
+    {
+      "title": "BAC mention \"Très bien\"",
+      "location": "Nîmes",
+      "description": "Option \"Spé Math\" and \"Anglais européen\"",
+      "entity": "Lycée Dhuoda",
+      "date": "2014 - 2017",
+      "icon": "fa-graduation-cap"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Developer",
+      "location": "Nîmes",
+      "description": "Realisation of a C# fullstack app",
+      "entity": "FOGALE nanotech",
+      "date": "2018"
+    }
+  ]
+}

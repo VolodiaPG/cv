@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ComponentId } from '../shared/components/components';
-import { ComponentRegistryService } from '@app/shared/components';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +6,7 @@ import { ComponentRegistryService } from '@app/shared/components';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  /**
-   * Make it available for the scopes
-   */
-  componentId = ComponentId;
+  constructor() {}
 
-  constructor(private componentRegistry: ComponentRegistryService) {}
-
-  ngOnInit() {
-    //update the registry
-    this.componentRegistry.add(ComponentId.ExperiencesList);
-  }
+  ngOnInit() {}
 }

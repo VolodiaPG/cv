@@ -1,12 +1,8 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { BaseComponent, ComponentRegistryService } from '@app/shared/components';
-import { ExperienceModel } from '../../shared/models/experience.model';
 import { BaseModelLoaderService } from '../../core/model-builder/base-model-loader.service';
-
-import experiences from '../../../assets/json/experiences.json';
-import { Logger } from '@app/core';
-
-let log = new Logger('Timeline');
+import { BaseModel } from '@app/core/model-builder/base-model';
+import { ExperienceModel } from '@app/shared/models/experience.model';
 
 @Component({
   selector: 'app-timeline',
@@ -14,6 +10,10 @@ let log = new Logger('Timeline');
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent extends BaseComponent implements OnInit, OnDestroy {
+  /**
+   * The data to be represented
+   */
+  @Input()
   data: ExperienceModel[];
 
   constructor(componentRegistry: ComponentRegistryService, private loader: BaseModelLoaderService) {
@@ -21,10 +21,11 @@ export class TimelineComponent extends BaseComponent implements OnInit, OnDestro
   }
 
   ngOnInit(): void {
-    this.init(() => {
-      this.data = this.loader.load(experiences, ExperienceModel);
-      log.debug(this.data);
-    });
+    this.init();
+    // this.init(() =>
+    // {
+    //   this.data = this.loader.load(experiences, ExperienceModel);
+    // });
   }
 
   ngOnDestroy(): void {

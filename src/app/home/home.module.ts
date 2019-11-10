@@ -14,6 +14,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResumeComponent } from './resume/resume.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineCardComponent } from './timeline/timeline-card/timeline-card.component';
+import { ProgressBarChartComponent } from './progress-bar-chart/progress-bar-chart.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule, NgbModule],
@@ -25,7 +27,9 @@ import { TimelineCardComponent } from './timeline/timeline-card/timeline-card.co
     NavbarComponent,
     ResumeComponent,
     TimelineComponent,
-    TimelineCardComponent
+    TimelineCardComponent,
+    ProgressBarChartComponent,
+    SkillsComponent
   ]
 })
 export class HomeModule {}

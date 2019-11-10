@@ -29,9 +29,16 @@ export class ExperienceModel extends BaseModel {
   @Property({
     type: PropertyValueType.String,
     label: 'Entity',
-    icon: '../../../assets/logo/'
+    path: '../../../assets/logo/'
   })
-  entityLogo: string;
+  image: string;
+
+  @Property({
+    type: PropertyValueType.String,
+    label: 'Entity',
+    icon: true
+  })
+  icon: string;
 
   @Property({
     type: PropertyValueType.String,

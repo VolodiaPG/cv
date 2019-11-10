@@ -1,44 +1,56 @@
-<div class="posted-date" *ngIf="exists('date')">
-  <span class="month">{{ getProperty('date') }}</span>
-</div>
-<!--/ /posted-date /-->
+<div [ngClass]="{ 'timeline-inverted': inverted }">
+  <div class="posted-date" *ngIf="exists('date')">
+    <span class="month">{{ getProperty('date') }}</span>
+  </div>
+  <!--/ /posted-date /-->
 
-<div id="edu-01" class="panel panel-success timeline-panel wow" data-wow-duration="1.5s">
-  <div class="timeline-content">
-    <div class="panel-heading timeline-heading row">
-      <div class="col-md-9 col-xs-9 pull-left">
-        <h3 class="panel-title">{{ getProperty('title') }}</h3>
-        <span>
+  <div class="panel panel-success timeline-panel wow" data-wow-duration="1.5s">
+    <div class="timeline-content">
+      <div class="panel-heading timeline-heading row">
+        <div class="col-md-10 col-9 pull-left">
+          <h3 class="panel-title text-uppercase">{{ getProperty('title') }}</h3>
+          <span>
+            <a
+              *ngIf="exists('subtitleUrl') && exists('subtitle')"
+              [href]="getProperty('subtitleUrl')"
+              class="h4 text-success"
+              target="_blank"
+              rel="noopener"
+              >{{ getProperty('subtitle') }}</a
+            >
+            <a *ngIf="!exists('subtitleUrl') && exists('subtitle')" class="h4 text-success">
+              {{ getProperty('subtitle') }}
+            </a>
+            <ng-container *ngIf="exists('precision')"><br />{{ getProperty('precision') }}</ng-container>
+          </span>
+        </div>
+        <div class="col-md-2 col-3 pull-right text-center">
+          <i *ngIf="exists('icon')" [className]="'fas fa-3x text-success ' + getProperty('icon')"></i>
           <a
-            *ngIf="exists('subtitleUrl') && exists('subtitle')"
+            *ngIf="!exists('icon') && exists('image')"
             [href]="getProperty('subtitleUrl')"
-            class="h4 text-success"
+            class="thumbnail"
             target="_blank"
             rel="noopener"
-            >{{ getProperty('subtitle') }}</a
           >
-          <h4 *ngIf="!exists('subtitleUrl') && exists('subtitle')" class="h4 text-success">
-            {{ getProperty('subtitle') }}
-          </h4>
-          <span *ngIf="exists('precision')"><br />{{ getProperty('precision') }}</span>
-        </span>
+            <img
+              class="media-object"
+              [src]="getProperty('image')"
+              max-width="90px"
+              max-height="90px"
+              width="90px"
+              height="90px"
+              [alt]="getProperty('subtitle')"
+            />
+          </a>
+        </div>
       </div>
 
-      <div class="col-md-2 col-xs-3 pull-right text-center">
-        <i class="fas fa-3x fa-user-graduate text-success"></i>
+      <div *ngIf="exists('description')" class="panel-body timeline-body">
+        <p>
+          {{ getProperty('description') }}
+        </p>
       </div>
-    </div>
-
-    <div class="panel-body timeline-body">
-      <p>
-        Electromechanical Engineering<br />
-        Kremenchuk State Polytechnical University, Ukraine<br />
-        <strong>7.091003</strong> - Design Engineer of Electronic Equipment
-      </p>
-      <p>
-        Awarded an honorary diploma for the <strong class="text-info">2nd place</strong> in the competition for the best
-        thesis project
-      </p>
     </div>
   </div>
 </div>

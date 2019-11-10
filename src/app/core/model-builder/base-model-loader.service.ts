@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { BaseModel } from './base-model';
-import { ExperienceModel } from '@app/shared/models/experience.model';
 
 @Injectable({
   providedIn: 'root'
