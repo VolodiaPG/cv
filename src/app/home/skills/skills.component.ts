@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComponentRegistryService, ComponentId } from '@app/shared/components';
 
 @Component({
   selector: 'app-skills',
@@ -6,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  constructor() {}
+  // make it available for the scope
+  componentId = ComponentId;
 
-  ngOnInit() {}
+  constructor(private componentRegistry: ComponentRegistryService) {}
+
+  ngOnInit() {
+    this.componentRegistry.add(ComponentId.ProgressBarChart);
+  }
 }

@@ -3,5 +3,6 @@ export enum ComponentId {
   DataTableB = 'data-table-b',
   DataList = 'data-list',
   EducationList = 'education-list',
-  ExperiencesList = 'experiences-list'
+  ExperiencesList = 'experiences-list',
+  ProgressBarChart = 'progress-bar-chart'
 }

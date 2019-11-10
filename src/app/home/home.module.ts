@@ -16,6 +16,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { TimelineCardComponent } from './timeline/timeline-card/timeline-card.component';
 import { ProgressBarChartComponent } from './progress-bar-chart/progress-bar-chart.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProgressElementComponent } from './progress-bar-chart/progress-element/progress-element.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, CoreModule, SharedModule, HomeRoutingModule, NgbModule],
@@ -29,7 +30,8 @@ import { SkillsComponent } from './skills/skills.component';
     TimelineComponent,
     TimelineCardComponent,
     ProgressBarChartComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProgressElementComponent
   ]
 })
 export class HomeModule {}

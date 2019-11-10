@@ -1,1 +1,5 @@
-<p>progress-bar-chart works!</p>
+<div class="row background">
+  <div *ngFor="let model of data" class="col-md-6">
+    <app-progress-element [model]="model"></app-progress-element>
+  </div>
+</div>

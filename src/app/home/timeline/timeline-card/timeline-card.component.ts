@@ -1,21 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BaseModel } from '@app/core/model-builder/base-model';
 
-/**
- * Caches the asked property to reduce object manipulation
- */
-class Cache {
-  content: string;
-  key = '';
-  set = false;
-}
-
-enum IconType {
-  Image,
-  Icon,
-  None
-}
-
 @Component({
   selector: 'app-timeline-card',
   templateUrl: './timeline-card.component.html',
@@ -40,14 +25,7 @@ export class TimelineCardComponent implements OnInit {
   @Input()
   inverted = false;
 
-  /**
-   * Temporary cache to store there last accessed property
-   */
-  private cache: Cache;
-
-  constructor() {
-    this.cache = new Cache();
-  }
+  constructor() {}
 
   ngOnInit() {}
 
@@ -57,20 +35,14 @@ export class TimelineCardComponent implements OnInit {
    * @returns the object retrieved or `undefined`
    */
   getProperty(property: string): string {
-    if (!(this.cache.set && this.cache.key === property)) {
-      this.cache.set = true;
-      this.cache.key = property;
-      this.cache.content = this.model[this.config['cols'][property]['property']];
-    }
+    let ret = this.model[property];
 
-    if (property === 'image') {
+    if (ret && property === 'image') {
       //get the metadata of the path
-      this.cache.content = this.model.getPropertyMeta('image').path + '/' + this.cache.content;
+      ret = this.model.getPropertyMeta('image').path + '/' + ret;
     }
 
-    console.log(this.cache.content);
-
-    return this.cache.content;
+    return ret;
   }
 
   /**
@@ -79,18 +51,7 @@ export class TimelineCardComponent implements OnInit {
    * @returns `true` if the property exists
    */
   exists(property: string): boolean {
-    if (this.cache.set && this.cache.key === property) {
-      // cache already set, no need to redo the process
-      return true;
-    }
-
-    this.cache.set = false;
-
     // using this syntax in order not to access undefined elements
-    return !(this.cache.key = this.config['cols'][property])
-      ? false
-      : !(this.cache.content = this.getProperty(property))
-      ? false
-      : (this.cache.set = true);
+    return !this.config['cols'][property] ? false : !this.getProperty(property) ? false : true;
   }
 }
