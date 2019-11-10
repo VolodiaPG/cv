@@ -22,7 +22,8 @@ export interface IPropertyMeta {
   type: PropertyValueType;
   label: string;
   hidden?: boolean;
-  icon?: string;
+  icon?: boolean;
+  path?: string;
 }
 
 /**
@@ -35,7 +36,8 @@ export enum PropertyMetadataProperies {
   hidden = 'hidden',
   icon = 'icon',
   required = 'required',
-  tranlate = 'translate'
+  tranlate = 'translate',
+  path = 'path'
 }
 
 export function Property(meta: IPropertyMeta) {

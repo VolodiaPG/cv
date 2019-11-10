@@ -4,11 +4,22 @@
 
     <div class="row">
       <div class="col-md-12">
-        <div id="edu" class="resume-title wow">
-          <h2 class="text-center text-primary">Education</h2>
+        <div class="resume-title wow">
+          <h2 class="text-center text-primary-gradient">Education</h2>
         </div>
 
-        <app-timeline [id]="componentId.ExperiencesList"></app-timeline>
+        <app-timeline [id]="componentId.EducationList" [data]="loadEducation()"></app-timeline>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="resume-title wow">
+          <h2 class="text-center text-primary-gradient">Experience</h2>
+        </div>
+
+        <app-timeline [id]="componentId.ExperiencesList" [data]="loadExperience()"></app-timeline>
       </div>
     </div>
   </div>

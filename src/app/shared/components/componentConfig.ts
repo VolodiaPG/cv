@@ -48,6 +48,35 @@ export const componentConfigs: object[] = [
     ]
   },
   {
+    id: ComponentId.EducationList,
+    cols: {
+      title: {
+        property: 'title'
+      },
+      subtitle: {
+        property: 'entity'
+      },
+      subtitleUrl: {
+        property: 'entityUrl'
+      },
+      precision: {
+        property: 'location'
+      },
+      date: {
+        property: 'date'
+      },
+      description: {
+        property: 'description'
+      },
+      icon: {
+        property: 'icon'
+      },
+      image: {
+        property: 'image'
+      }
+    }
+  },
+  {
     id: ComponentId.ExperiencesList,
     cols: {
       title: {
@@ -69,7 +98,10 @@ export const componentConfigs: object[] = [
         property: 'description'
       },
       icon: {
-        property: 'entityLogo'
+        property: 'icon'
+      },
+      image: {
+        property: 'image'
       }
     }
   }
