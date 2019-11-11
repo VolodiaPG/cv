@@ -35,7 +35,7 @@ export class TimelineCardComponent implements OnInit {
    * @returns the object retrieved or `undefined`
    */
   getProperty(property: string): string {
-    let ret = this.model[property];
+    let ret = this.model[this.config['cols'][property].property];
 
     if (ret && property === 'image') {
       //get the metadata of the path
