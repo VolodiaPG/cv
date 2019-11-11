@@ -1,30 +1,54 @@
 {
-  "education": [
-    {
-      "title": "Computer science engineer student",
-      "location": "Rennes",
-      "description": "Engineering school \n Currently as a computer science student in 1st year of engineering cycle.",
-      "entity": "INSA Rennes",
-      "entityUrl": "http://www.insa-rennes.fr",
-      "date": "2017 - 2019",
-      "icon": "fa-user-graduate"
-    },
-    {
-      "title": "BAC mention \"Très bien\"",
-      "location": "Nîmes",
-      "description": "Option \"Spé Math\" and \"Anglais européen\"",
-      "entity": "Lycée Dhuoda",
-      "date": "2014 - 2017",
-      "icon": "fa-graduation-cap"
-    }
-  ],
-  "experience": [
-    {
-      "title": "Developer",
-      "location": "Nîmes",
-      "description": "Realisation of a C# fullstack app",
-      "entity": "FOGALE nanotech",
-      "date": "2018"
-    }
-  ]
+  "education": {
+    "en-US": [
+      {
+        "title": "Computer science engineer student",
+        "location": "Rennes",
+        "description": "Engineering school \n Currently as a computer science student in 1st year of engineering cycle.",
+        "entity": "INSA Rennes",
+        "entityUrl": "http://www.insa-rennes.fr",
+        "date": "2017 - 2019",
+        "icon": "fa-user-graduate"
+      },
+      {
+        "title": "BAC mention \"Très bien\"",
+        "location": "Nîmes",
+        "description": "Option \"Spé Math\" and \"Anglais européen\"",
+        "entity": "Lycée Dhuoda",
+        "date": "2014 - 2017",
+        "icon": "fa-graduation-cap"
+      }
+    ],
+    "fr-FR": [
+      {
+        "title": "Etudiant ingénieur informatique",
+        "location": "Rennes",
+        "description": "Ecole d'ingénieur \n étudiant en 1ère année de cycle ingénieur.",
+        "entity": "INSA Rennes",
+        "entityUrl": "http://www.insa-rennes.fr",
+        "date": "2017 - 2019",
+        "icon": "fa-user-graduate"
+      }
+    ]
+  },
+  "experience": {
+    "en-US": [
+      {
+        "title": "Developer",
+        "location": "Nîmes",
+        "description": "Realisation of a C# fullstack app",
+        "entity": "FOGALE nanotech",
+        "date": "2018"
+      }
+    ],
+    "fr-FR": [
+      {
+        "title": "Developpeur",
+        "location": "Nîmes",
+        "description": "Réalisation d'une application fullstack en C#",
+        "entity": "FOGALE nanotech",
+        "date": "2018"
+      }
+    ]
+  }
 }

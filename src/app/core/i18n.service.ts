@@ -37,6 +37,15 @@ export class I18nService {
   }
 
   /**
+   * Append a translation object to the existing translations
+   * @param lang the language, eg. `fr-FR`
+   * @param translations the object having the translations
+   */
+  mergeTranslation(lang: string, translations: object) {
+    this.translateService.setTranslation(lang, translations, true);
+  }
+
+  /**
    * Initializes i18n for the application.
    * Loads language from local storage if present, or sets default language.
    * @param defaultLanguage The default language to use.
