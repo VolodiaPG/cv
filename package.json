@@ -35,6 +35,7 @@
     "@types/reflect-metadata": "^0.1.0",
     "animate.css": "^3.7.2",
     "bootstrap": "^4.1.1",
+    "multiple.js": "0.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.2",
     "zone.js": "^0.9.1"
