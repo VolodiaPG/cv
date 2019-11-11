@@ -7,8 +7,8 @@
   <div class="panel panel-success timeline-panel wow" data-wow-duration="1.5s">
     <div class="timeline-content">
       <div class="panel-heading timeline-heading row">
-        <div class="col-md-10 col-9 pull-left">
-          <h3 class="panel-title text-uppercase">{{ getProperty('title') }}</h3>
+        <div class="col-md-10 col-10 pull-left">
+          <h3 class="panel-title text-uppercase text-truncate">{{ getProperty('title') }}</h3>
           <span>
             <a
               *ngIf="exists('subtitleUrl') && exists('subtitle')"
@@ -24,29 +24,20 @@
             <ng-container *ngIf="exists('precision')"><br />{{ getProperty('precision') }}</ng-container>
           </span>
         </div>
-        <div class="col-md-2 col-3 pull-right text-center">
-          <i *ngIf="exists('icon')" [className]="'fas fa-3x text-success ' + getProperty('icon')"></i>
+        <div class="col-md-2 col-2 pull-right text-center d-flex flex-row-reverse">
+          <i class="thumbnail" *ngIf="exists('icon')" [className]="'fas fa-3x text-success ' + getProperty('icon')"></i>
           <a
             *ngIf="!exists('icon') && exists('image')"
             [href]="getProperty('subtitleUrl')"
-            class="thumbnail"
             target="_blank"
             rel="noopener"
           >
-            <img
-              class="media-object"
-              [src]="getProperty('image')"
-              max-width="90px"
-              max-height="90px"
-              width="90px"
-              height="90px"
-              [alt]="getProperty('subtitle')"
-            />
+            <img class="media-object thumbnail" [src]="getProperty('image')" [alt]="getProperty('subtitle')" />
           </a>
         </div>
       </div>
 
-      <div *ngIf="exists('description')" class="panel-body timeline-body">
+      <div *ngIf="exists('description')" class="panel-body timeline-body text-justify">
         <p>
           {{ getProperty('description') }}
         </p>

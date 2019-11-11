@@ -4,11 +4,11 @@
       {
         "title": "Computer science engineer student",
         "location": "Rennes",
-        "description": "Engineering school \n Currently as a computer science student in 1st year of engineering cycle.",
+        "description": "Engineering school,  currently attending as a computer science student in 1st year of engineering cycle.",
         "entity": "INSA Rennes",
         "entityUrl": "http://www.insa-rennes.fr",
         "date": "2017 - 2019",
-        "icon": "fa-user-graduate"
+        "image": "Logo_INSARennes-developpe-quadri-rvb_60.png"
       },
       {
         "title": "BAC mention \"Très bien\"",
@@ -27,7 +27,15 @@
         "entity": "INSA Rennes",
         "entityUrl": "http://www.insa-rennes.fr",
         "date": "2017 - 2019",
-        "icon": "fa-user-graduate"
+        "image": "Logo_INSARennes-developpe-quadri-rvb_60.png"
+      },
+      {
+        "title": "BAC mention \"Très bien\"",
+        "location": "Nîmes",
+        "description": "Option \"Spé Math\" et \"Anglais européen\"",
+        "entity": "Lycée Dhuoda",
+        "date": "2014 - 2017",
+        "icon": "fa-graduation-cap"
       }
     ]
   },
@@ -36,18 +44,28 @@
       {
         "title": "Developer",
         "location": "Nîmes",
-        "description": "Realisation of a C# fullstack app",
+        "description": "Realisation of a C# fullstack app to retrieve measurments from HLS probes in order to process them and display the height diffrence at thoses probes point. Total rework over the last solution that runned on Windows 95.",
         "entity": "FOGALE nanotech",
-        "date": "2018"
+        "date": "2018",
+        "image": "fogale.png"
       }
     ],
     "fr-FR": [
       {
         "title": "Developpeur",
         "location": "Nîmes",
-        "description": "Réalisation d'une application fullstack en C#",
+        "description": "Réalisation d'une application fullstack en C# de récupération de donnée depuis des capteurs HLS afin de la traiter puis d'afficher les différences de hauteur vis-a-vis de chanque point de captation. Nouveau sofwtare par rapport à la dernière solution tourant sur Windows 95.",
         "entity": "FOGALE nanotech",
-        "date": "2018"
+        "date": "2018",
+        "image": "fogale.png"
+      },
+      {
+        "title": "Olympiades Nationales SI",
+        "entity": "Lycée Dhuoda",
+        "location": "Montpellier & Paris",
+        "description": "Réalisation d'une solution innovante de changement de batteries sur un drone par une station automatique afin de garantir l'utilisation continue du drone.",
+        "date": "2017",
+        "icon": "fa-charging-station"
       }
     ]
   }

@@ -43,6 +43,7 @@
   "Birth:": "Date de naissance :",
   "Location:": "Hâbite :",
   "Citizenship:": "Nationalité :",
+  "Skills": "Compétences",
   "__catch_phrase__": "Recherche activement un stage",
   "BIO_OBJECTIVE": "Developpeur full-stack (Angular, Node.js, etc.) et passionné de découvrir de nouveaux stacks",
   "BIO_SELFIE": "J'ai commencé a programmé très jeune (11 ans) et produit de nombreux projets. Ceux qui sont les plus intéressants ont souvent nécessité une maîtrise du C++, JavaScript/Typescript.",

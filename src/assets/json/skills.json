@@ -1,50 +1,80 @@
 [
   {
     "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
+    "color": "#ff0000",
+    "icon": "fab fa-angular",
+    "completion": 0.75
+  },
+  {
+    "title": "C++",
+    "color": "#28a745",
+    "icon": "fa fa-check",
+    "completion": 0.81
+  },
+  {
+    "title": "HTML",
+    "color": "#ffe94a",
+    "icon": "fab fa-html5",
+    "completion": 0.9
+  },
+  {
+    "title": "CSS",
+    "color": "rgb(41, 101, 241)",
+    "icon": "fab fa-css3-alt",
+    "completion": 0.65
+  },
+  {
+    "title": "Ruby Scripting",
+    "color": "#ff0000",
+    "icon": "fas fa-gem",
+    "completion": 0.54
+  },
+  {
+    "title": "TypeScript",
+    "color": "rgb(41, 101, 241)",
+    "icon": "fas fa-check",
+    "completion": 0.81
+  },
+  {
+    "title": "JavaScript",
+    "color": "#ffe94a",
+    "icon": "fab fa-js-square",
+    "completion": 0.4
+  },
+  {
+    "title": "Bootstrap",
+    "color": "rgb(86, 91, 124)",
+    "icon": "fab fa-bootstrap",
+    "completion": 0.4
+  },
+  {
+    "title": "Bash Scripting",
+    "color": "#28a745",
+    "icon": "fas fa-hashtag",
+    "completion": 0.4
+  },
+  {
+    "title": "Postres",
+    "color": "#28a745",
+    "icon": "fas fa-database",
+    "completion": 0.22
+  },
+  {
+    "title": "Java",
+    "color": "#ffa329",
+    "icon": "fab fa-java",
     "completion": 0.8
   },
   {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
+    "title": "Node.js",
+    "color": "#44883e",
+    "icon": "fab fa-node-js",
+    "completion": 0.5
   },
   {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
-  },
-  {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
-  },
-  {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
-  },
-  {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
-  },
-  {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
-  },
-  {
-    "title": "Angular",
-    "color": "#33cc33",
-    "icon": "fa-hashtag",
-    "completion": 0.8
+    "title": "Docker",
+    "color": "#0db7ed",
+    "icon": "fab fa-docker",
+    "completion": 0.25
   }
 ]
