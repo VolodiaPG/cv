@@ -17,7 +17,8 @@
     "paths": {
       "@app/*": ["src/app/*"],
       "@env/*": ["src/environments/*"]
-    }
+    },
+    "allowJs": true
   },
   "angularCompilerOptions": {
     "preserveWhitespaces": true

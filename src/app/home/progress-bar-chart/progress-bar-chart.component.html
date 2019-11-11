@@ -1,5 +1,19 @@
 <div class="row background">
   <div *ngFor="let model of data" class="col-md-6">
-    <app-progress-element [model]="model"></app-progress-element>
+    <div class="skill-progress">
+      <div class="skill-title">
+        <i [attr.class]="model.icon + ' fa fa-2x fa-fw'" [ngStyle]="{ color: model.color }"></i>
+        <span translate>{{ model.title }}</span>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar six-sec-ease-in-out item-shared-background"
+          role="progressbar"
+          [ngStyle]="{ width: model.completion * 100 + '%' }"
+        >
+          <span>{{ model.completion * 100 }}%</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
