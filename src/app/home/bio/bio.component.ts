@@ -30,6 +30,6 @@ export class BioComponent implements OnInit, OnDestroy {
   }
 
   get birth() {
-    return this._birth.toLocaleString(this.i18n.language).split(',')[0];
+    return this._birth.toLocaleString(this.i18n.language).substring(0, 11);
   }
 }
