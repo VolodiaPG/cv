@@ -18,7 +18,7 @@ export class NavbarComponent implements OnInit {
   @ViewChild('navbarContainer', { static: false })
   private _navbarContainer: ElementRef;
 
-  constructor(private _router: Router, private _i18nService: I18nService) {}
+  constructor(private _i18nService: I18nService) {}
 
   ngOnInit() {}
 
@@ -39,7 +39,7 @@ export class NavbarComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event'])
-  private onWindowScroll(e: Event) {
+  private _(_: Event) {
     this.sticky = window.pageYOffset > this._navbarContainer.nativeElement.offsetTop;
   }
 }

@@ -42,8 +42,11 @@ export class ResumeComponent implements OnInit, OnDestroy {
 
     this.addLang('en-US', experiences.education['en-US']);
     this.addLang('fr-FR', experiences.education['fr-FR']);
+    this.addLang('es-ES', experiences.education['es-ES']);
+
     this.addLang('en-US', experiences.experience['en-US']);
     this.addLang('fr-FR', experiences.experience['fr-FR']);
+    this.addLang('es-ES', experiences.experience['es-ES']);
 
     console.log(experiences);
     this.selectLang(this.i18n.language);

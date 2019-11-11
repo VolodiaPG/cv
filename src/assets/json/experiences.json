@@ -37,6 +37,25 @@
         "date": "2014 - 2017",
         "icon": "fa-graduation-cap"
       }
+    ],
+    "es-ES": [
+      {
+        "title": "Estudiante ingeniero informaticó",
+        "location": "Rennes",
+        "description": "Escuela de ingenieriá. Estudiante en primer año de ciclo ingeniero",
+        "entity": "INSA Rennes",
+        "entityUrl": "http://www.insa-rennes.fr",
+        "date": "2017 - 2019",
+        "image": "Logo_INSARennes-developpe-quadri-rvb_60.png"
+      },
+      {
+        "title": "Bachiller cón mención \"Muy bien\"",
+        "location": "Nîmes",
+        "description": "Opción \"especialidad matemáticas\" e \"inglés europeo\"",
+        "entity": "Lycée Dhuoda",
+        "date": "2014 - 2017",
+        "icon": "fa-graduation-cap"
+      }
     ]
   },
   "experience": {
@@ -64,6 +83,24 @@
         "entity": "Lycée Dhuoda",
         "location": "Montpellier & Paris",
         "description": "Réalisation d'une solution innovante de changement de batteries sur un drone par une station automatique afin de garantir l'utilisation continue du drone.",
+        "date": "2017",
+        "icon": "fa-charging-station"
+      }
+    ],
+    "es-ES": [
+      {
+        "title": "Desarollador",
+        "location": "Nîmes",
+        "description": "Realización de una aplicación C# para recoger y tratar dato a partir de sensores HLS, luego visualizar diferencias de altitud entre cada sensores. Esto fue un nuevo software porque la antigua versión se ejecutó sobre Windows 95",
+        "entity": "FOGALE nanotech",
+        "date": "2018",
+        "image": "fogale.png"
+      },
+      {
+        "title": "Olimpiadas nacionales de CI",
+        "entity": "Lycée Dhuoda",
+        "location": "Montpellier & Paris",
+        "description": "Realización de una solución para cambiar baterías de drones cón una estación automomatica para aseguarar una utilización prolongada del drón",
         "date": "2017",
         "icon": "fa-charging-station"
       }
