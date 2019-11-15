@@ -76,5 +76,11 @@
     "color": "#0db7ed",
     "icon": "fab fa-docker",
     "completion": 0.25
+  },
+  {
+    "title": "Python",
+    "color": "#0db7ed",
+    "icon": "fab fa-python",
+    "completion": 0.75
   }
 ]
